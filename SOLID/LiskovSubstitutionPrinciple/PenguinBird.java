@@ -1,4 +1,4 @@
-package SOLID.singularity.LiskovSubstitutionPrinciple;
+package SOLID.LiskovSubstitutionPrinciple;
 
 public class PenguinBird implements Bird {
 

@@ -1,4 +1,4 @@
-package SOLID.singularity.InterfaceSegrationPriciple;
+package SOLID.InterfaceSegrationPriciple;
 
 public class AudioPlayer implements Audio {
 

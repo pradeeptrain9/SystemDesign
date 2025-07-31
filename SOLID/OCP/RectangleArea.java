@@ -1,4 +1,4 @@
-package SOLID.singularity.OCP;
+package SOLID.OCP;
 
 public class RectangleArea implements Shape {
 

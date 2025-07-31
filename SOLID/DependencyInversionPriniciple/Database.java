@@ -1,4 +1,4 @@
-package SOLID.singularity.DependencyInversionPriniciple;
+package SOLID.DependencyInversionPriniciple;
 
 public interface Database {
 

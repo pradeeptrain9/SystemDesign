@@ -1,4 +1,4 @@
-package SOLID.singularity.OCP;
+package SOLID.OCP;
 
 public interface Shape {
 
