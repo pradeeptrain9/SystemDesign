@@ -31,7 +31,7 @@ class InvoiceRepository {
 
 ---
 
-## 2. **O - Open/Closed Principle (OCP)**
+## 2. **O - Open/Closed Principle (SOLID.singularity.OCP)**
 
 **Definition:**
 
@@ -156,7 +156,7 @@ class UserService {
 | Principle | Description                                        | Goal                    |
 | --------- | -------------------------------------------------- | ----------------------- |
 | SRP       | One class = One responsibility                     | Maintainability         |
-| OCP       | Extend behavior, don't modify existing code        | Flexibility             |
+| SOLID.singularity.OCP       | Extend behavior, don't modify existing code        | Flexibility             |
 | LSP       | Subclasses shouldn't break parent behavior         | Reliability             |
 | ISP       | Don't force clients to implement unnecessary stuff | Decoupling              |
 | DIP       | Depend on abstractions, not concrete classes       | Testability, Modularity |

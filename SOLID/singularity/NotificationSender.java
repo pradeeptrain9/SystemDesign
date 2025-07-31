@@ -1,7 +1,9 @@
+package SOLID.singularity;
+
 public class NotificationSender {
 
     public static void main(String[] args) {
-        // Create an instance of EmailNotification
+        // Create an instance of SOLID.singularity.EmailNotification
         Notification email = new EmailNotification("Hello via Email!");
         Notification sms = new SmsNotification("Hello via SMS!");
 
