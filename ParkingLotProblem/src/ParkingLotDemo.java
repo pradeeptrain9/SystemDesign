@@ -31,49 +31,49 @@ public class ParkingLotDemo {
             System.err.println("Error in Test Case 1: " + e.getMessage());
         }
 //
-//        // Test Case 2: entity.Vehicle exit and fee calculation
-//        System.out.println("📋 Test Case 2: entity.Vehicle Exit and Fee Calculation");
-//        System.out.println("------------------------------------------------");
-//
-//        try {
-//            // Wait a moment to simulate time passing (for fee calculation)
-//            Thread.sleep(1000);
-//
-//            // Exit vehicles
-//            parkingService.exitVehicle("ABC123");
-//            parkingService.exitVehicle("XYZ789");
-//
-//            // Display status after exits
-//            parkingService.displayParkingStatus();
-//
-//        } catch (Exception e) {
-//            System.err.println("Error in Test Case 2: " + e.getMessage());
-//        }
-//
-//        // Test Case 3: Error handling
-//        System.out.println("📋 Test Case 3: Error Handling");
-//        System.out.println("------------------------------");
-//
-//        try {
-//            // Try to park with invalid vehicle type
-//            parkingService.parkVehicle("INVALID", "MOTORCYCLE");
-//        } catch (Exception e) {
-//            System.out.println("Expected error: " + e.getMessage());
-//        }
-//
-//        try {
-//            // Try to exit non-existent vehicle
-//            parkingService.exitVehicle("NOTFOUND");
-//        } catch (Exception e) {
-//            System.out.println("Expected error: " + e.getMessage());
-//        }
-//
-//        try {
-//            // Try to park duplicate vehicle
-//            parkingService.parkVehicle("TRUCK1", "TRUCK");
-//        } catch (Exception e) {
-//            System.out.println("Expected error: " + e.getMessage());
-//        }
+        // Test Case 2: entity.Vehicle exit and fee calculation
+        System.out.println("📋 Test Case 2: entity.Vehicle Exit and Fee Calculation");
+        System.out.println("------------------------------------------------");
+
+        try {
+            // Wait a moment to simulate time passing (for fee calculation)
+            Thread.sleep(1000);
+
+            // Exit vehicles
+            parkingService.exitVehicle("ABC123");
+            parkingService.exitVehicle("XYZ789");
+
+            // Display status after exits
+            parkingService.displayParkingStatus();
+
+        } catch (Exception e) {
+            System.err.println("Error in Test Case 2: " + e.getMessage());
+        }
+
+        // Test Case 3: Error handling
+        System.out.println("📋 Test Case 3: Error Handling");
+        System.out.println("------------------------------");
+
+        try {
+            // Try to park with invalid vehicle type
+            parkingService.parkVehicle("INVALID", "MOTORCYCLE");
+        } catch (Exception e) {
+            System.out.println("Expected error: " + e.getMessage());
+        }
+
+        try {
+            // Try to exit non-existent vehicle
+            parkingService.exitVehicle("NOTFOUND");
+        } catch (Exception e) {
+            System.out.println("Expected error: " + e.getMessage());
+        }
+
+        try {
+            // Try to park duplicate vehicle
+            parkingService.parkVehicle("TRUCK1", "TRUCK");
+        } catch (Exception e) {
+            System.out.println("Expected error: " + e.getMessage());
+        }
 //
 //        // Test Case 4: Fill parking lot to capacity
 //        System.out.println("📋 Test Case 4: Fill Parking Lot to Capacity");

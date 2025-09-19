@@ -1,6 +1,7 @@
 package ParkingLotProblem.entity;
 
 import java.util.HashMap;
+import java.util.Objects;
 
 public class ParkingLot {
     public  int totalslots;
@@ -60,6 +61,39 @@ public class ParkingLot {
         availableslots--;
 
         return nearestSlot;
+    }
+
+    public int exitVehicle(String name){
+
+        if(!vehicleToSlot.containsKey(name)){
+            throw new IllegalArgumentException("entity.Vehicle is not parked.");
+        }
+        int slotNumber = vehicleToSlot.get(name);
+        ParkingSlot curSlot = slotsIndicator.get(slotNumber);
+
+        Vehicle curVehicle = curSlot.getVehicle();
+
+        String type = curVehicle.getType();
+
+        int cost;
+
+        if(Objects.equals(type, "CAR")){
+            cost = 30;
+        }
+        else if(Objects.equals(type, "TRUCK")){
+            cost = 50;
+        }
+        else {
+            cost = 15;
+        }
+
+        curSlot.setVehicle(null);
+        curSlot.setStatus(false);
+        vehicleToSlot.remove(name);
+
+        availableslots++;
+
+        return cost;
     }
 
     private boolean isParkingFull() {
