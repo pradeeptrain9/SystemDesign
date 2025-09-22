@@ -74,7 +74,7 @@ public class ParkingLotDemo {
         } catch (Exception e) {
             System.out.println("Expected error: " + e.getMessage());
         }
-//
+
 //        // Test Case 4: Fill parking lot to capacity
 //        System.out.println("📋 Test Case 4: Fill Parking Lot to Capacity");
 //        System.out.println("---------------------------------------------");
